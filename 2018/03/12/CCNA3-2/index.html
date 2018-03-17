@@ -72,7 +72,7 @@
 
     
         <meta property="article:published_time" content="3月 12, 2018" />
-        <meta property="article:modified_time" content="3月 12, 2018" />
+        <meta property="article:modified_time" content="3月 17, 2018" />
     
 
     <!-- The Twitter Card protocol -->
@@ -113,7 +113,7 @@
     "headline": "CCNA3-2",
     "url": "http://yoursite.com/2018/03/12/CCNA3-2/index.html",
     "datePublished": "3月 12, 2018",
-    "dateModified": "3月 12, 2018",
+    "dateModified": "3月 17, 2018",
     "description": "安全的网络~",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -509,7 +509,12 @@
 <p>如果要将特定范围内的VLAN排除在外：<br>core(config-if)#switchport trunk allowed vlan remove 4-8<br>将VLAN排除在外后，要恢复默认设置，可以使用下面命令：<br>core(config-if)#switchport trunk allowed vlan all<br>core(config-if)#no switchport trunk allowed vlan</p>
 <p>修改中继端口本机VLAN：<br>core(config)#int f0/1<br>core(config-if)#switchport trunk ?<br>allowed Set allowed VLAN characteristics when interface is in trunking<br>mode<br>encapsulation Set trunking encapsulation when interface is in trunking mode<br>native Set trunking native characteristics when interface is in<br>trunking mode<br>core(config-if)#switchport trunk native ?<br>vlan Set native VLAN when interface is in trunking mode<br>core(config-if)#switchport trunk native vlan ?</p>
 <p><1-1005> VLAN ID of the native VLAN when this port is in trunking mode<br>core(config-if)#switchport trunk native vlan 40<br>core(config-if)#^Z<br>将本地端口VLAN修改为VLAN40后可用show running-config查看该口的配置<br>如下：<br>!<br>interface FastEthernet0/1<br>description 1st connect to s1<br>switchport trunk native vlan 40<br>switchport trunk encapsulation dot1q<br>switchport mode trunk<br>!<br>别忘了邻接的端口需要相互配合！我们可以将当前端口本机VLAN恢复到默认设置：<br>core(config-if)#no switchport trunk native vlan<br>这样当前中继端口将把VLAN作为本机VLAN。记住，中继链路两端本机VLAN必须相同！！！</1-1005></p>
-<p>配置VLAN间的路由选择<br>473页 暂停</p>
+<p>配置VLAN间的路由选择<br>sw1(config)#int range f0/11-12<br>sw1(config-if-range)#switchport trunk encapsulation ? 【封装】<br>  dot1q      Interface uses only 802.1q trunking encapsulation when trunking<br>  isl        Interface uses only ISL trunking encapsulation when trunking<br>  negotiate  Device will negotiate trunking encapsulation with peer on<br>             interface<br>sw1(config-if-range)#switchport trunk encapsulation dot1q 【封装成动态dot1q】<br>sw1(config-if-range)#<br>22:12:57: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/11, changed state to down<br>22:12:58: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down<br>sw1(config-if-range)#switchport mode trunk【再将端口起来】【相当于是强制开启】</p>
+<p>如何查看：<br>sw1#show interfaces trunk<br>Port        Mode         Encapsulation  Status        Native vlan<br>Fa0/11      on           802.1q         trunking      1<br>Fa0/12      on           802.1q         trunking      1</p>
+<p>VTP配置<br>示例：将s1交换机设为VTP服务器、域名为SSS、密码为todd<br>s1(config)#vtp mode server<br>Device mode already VTP SERVER.<br>s1(config)#vtp domain SSS<br>Changing VTP domain name from NULL to SSS<br>s1(config)#vtp password todd<br>Setting device VLAN database password to todd<br>s1(config)#do show vtp password<br>VTP Password: todd<br>s1(config)#do show vtp status<br>VTP Version : 2<br>Configuration Revision : 0<br>Maximum VLANs supported locally : 1005<br>Number of existing VLANs : 7<br>VTP Operating Mode : Server<br>VTP Domain Name : SSS<br>VTP Pruning Mode : Disabled<br>VTP V2 Mode : Disabled<br>VTP Traps Generation : Disabled<br>MD5 digest : 0x6C 0x95 0x6D 0x60 0x64 0xA5 0x7D 0x2E<br>Configuration last modified by 0.0.0.0 at 3-1-93 00:01:29<br>Local updater ID is 0.0.0.0 (no valid interface found)</p>
+<p>VTP一定要创建域名才会同步，域名不能为空，同时改域名会使得修订号为0</p>
+<p>VTP模式【实际情况中只将一两台交换机模式设置为server模式，防止误操作】<br>Server：默认的，可以创建修改vlan信息<br>Clien：不能增加修改vlan信息<br>Transparent：透明模式，支持扩展vlan。和其他交换机互不影响，互相不同步。修订号固定为0。</p>
+<p>VLAN中数据哪里来？<br>Vlan.bat中<br>Vlan信息保存在配置文件中，配置文件保存在NVRAM中</p>
 <p>所用学习资料为CCNA学习指南（第七版） 旨在记录学习过程</p>
 
     
@@ -529,6 +534,14 @@
             <!-- Post Prev & Next Nav -->
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
+    
+        <a href="/2018/03/17/CCNA-switch-1/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
     
 
     <!-- Section Spacer -->
@@ -628,7 +641,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
