@@ -12,6 +12,8 @@
     
     <title>
         
+            Python-函数 | 
+        
         hong17的博客
     </title>
 
@@ -34,7 +36,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="hong17">
     <meta name="description" itemprop="description" content="安全的网络~">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",Python个人笔记">
 
     <!-- Site Verification -->
     
@@ -63,15 +65,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="hong17的博客">
+    <meta property="og:title" content="Python-函数 | hong17的博客">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="安全的网络~">
-    
+    <meta property="og:article:tag" content="Python个人笔记"> 
 
+    
+        <meta property="article:published_time" content="3月 26, 2018" />
+        <meta property="article:modified_time" content="3月 26, 2018" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="hong17的博客">
+    <meta name="twitter:title" content="Python-函数 | hong17的博客">
     <meta name="twitter:description" content="安全的网络~">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -79,35 +84,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com" />
+        <link rel="canonical" href="http://yoursite.com/2018/03/26/Python-函数/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
+
+
 <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
-    "@type": "Website",
+    "@context": "https://schema.org",
+    "@type": "Article",
     "publisher": {
         "@type": "Organization",
         "name": "hong17的博客",
         "logo": "/img/favicon.png"
     },
-    "url": "http://yoursite.com/index.html",
-    "image": {
-        "@type": "ImageObject",
-        "url": "/img/favicon.png"
+    "author": {
+        "@type": "Person",
+        "name": "hong17",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/favicon.png"
+        },
+        "description": "欢迎来到我的博客！"
     },
+    "headline": "Python-函数",
+    "url": "http://yoursite.com/2018/03/26/Python-函数/index.html",
+    "datePublished": "3月 26, 2018",
+    "dateModified": "3月 26, 2018",
+    "description": "安全的网络~",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://yoursite.com"
-    },
-    "description": "安全的网络~"
+    }
 }
 </script>
-
-
 
 
     
@@ -287,758 +300,250 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
+                    <!-- Post TOC -->
+
     
-        <!-- Paradox Header -->
-        <!-- Daily pic -->
-<div class="mdl-card mdl-shadow--2dp daily-pic mdl-cell mdl-cell--8-col index-top-block">
-
-    <!-- Pic & Slogan -->
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/daily_pic.png)">
-        <p class="index-top-block-slogan"><a href="#">
-        
-            
-                欢迎来到我的博客！
-            
-        
-        </a></p>
-    </div>
-
-    <!-- Avatar & Name -->
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-        <!-- Author Avatar -->
-        <div id="author-avatar">
-            <img src="/img/avatar.png" width="32px" height="32px" alt="avatar">
-        </div>
-        <div>
-            <strong>hong17</strong>
-        </div>
-    </div>
-</div>
-
-        <!-- Blog info -->
-<div class="mdl-card mdl-shadow--2dp something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
-
-    <!-- Search -->
-    
-
-
-
-
-
-
-    <!-- LOGO -->
-    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
-        <a href="#" target="_blank">
-            <img src="/img/logo.png" alt="logo" />
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
         </a>
     </div>
+    -->
 
-    <!-- Infomation -->
-    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-        <!-- Blog Title -->
-        <div>
-            <strong>hong17的博客</strong>
-        </div>
-        <div class="section-spacer"></div>
-
-        <!-- Pages -->
-        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">view_carousel</i>
-            <span class="visuallyhidden">Pages</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
-            
-        </ul>
-
-        <!-- Menu -->
-        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">more_vert</i>
-            <span class="visuallyhidden">show menu</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
-            
-
-            
-
-            
-                <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=hong17的博客&url=http://yoursite.com/&pic=&searchPic=false&style=simple" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到微博
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://twitter.com/intent/tweet?text=hong17的博客&url=http://yoursite.com/&via=hong17" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Twitter
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/index.html" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Facebook
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://plus.google.com/share?url=http://yoursite.com/" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Google+
-                    </li>
-                </a>
-            
-
-            
-
-            
-                <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=hong17的博客&title=hong17的博客&summary=安全的网络~&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/" target="_blank">
-                    <li class="mdl-menu__item">
-                        分享到 QQ
-                    </li>
-                </a>
-            
-
-            
-        </ul>
-    </div>
-</div>
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
 
     
-    <div class="locate-thumbnail-symbol"></div>
-
-    <!-- Pin on top -->
-    
-
-    <!-- Normal Post -->
-    
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
         
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+    
+
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/26/Python-函数/">Python-函数</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            函数是指可重复使用的程序片段，允许你为某个代码块赋予名称，允许你通过这个特殊的名字在你的程序任何地方来运行代码块，并可重复任何次数。这就是所...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/26/Python-函数/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="hong17's avatar">
-            </div>
-            <div>
-                <strong>hong17</strong>
-                <span>3月 26, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/26/Python-break-continue/">Python-break+continue</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Break语句用以中断循环语句，也就是中止循环语句的执行，即使循环条件没有变为FALSE，如果你中断了一个for、while循环，任...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/26/Python-break-continue/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="hong17's avatar">
-            </div>
-            <div>
-                <strong>hong17</strong>
-                <span>3月 26, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/25/Python-if-while-for/">Python-if+while+for</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Python使用缩进作为其语句分组的方法，使用4个空格代替缩进！！！
-If语句If expression：Statem...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/25/Python-if-while-for/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="hong17's avatar">
-            </div>
-            <div>
-                <strong>hong17</strong>
-                <span>3月 25, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/24/Python-基本语法与数据类型/">Python-基本语法与数据类型</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            如何用Pytho来写一个五角星？
-
-
-
-import turt...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/24/Python-基本语法与数据类型/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="hong17's avatar">
-            </div>
-            <div>
-                <strong>hong17</strong>
-                <span>3月 24, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/24/CCNA-ACL的使用/">CCNA-ACL的使用</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            ACL 标准、扩展标准：1-99      只能匹配数据包中源信息【从哪里来】      命名扩展：100-199   能匹配数据包...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/24/CCNA-ACL的使用/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="hong17's avatar">
-            </div>
-            <div>
-                <strong>hong17</strong>
-                <span>3月 24, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/18/CCNA-router-重分布实验/">CCNA-router-重分布实验</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            路由器之间重分布实验：R1-3跑RIP  R3-5跑EIGRP R5-7跑OSPFshow running-config后的配置命令...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/18/CCNA-router-重分布实验/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="hong17's avatar">
-            </div>
-            <div>
-                <strong>hong17</strong>
-                <span>3月 18, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/17/CCNA-switch-1/">CCNA switch-1</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            交换机：学习 MAC泛红广播、组播、未知单播（相同VLAN的接口和相同trunk的接口）【trunk默认情况下可以允许所以vlan】...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/17/CCNA-switch-1/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="hong17's avatar">
-            </div>
-            <div>
-                <strong>hong17</strong>
-                <span>3月 17, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/12/CCNA3-2/">CCNA3-2</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            第二层交换型网络最大好处是：与每个交换机端口相连的每台设备都是一个独立的冲突域，消除了以太网的密度约束，从而能够组建更大的网络。然而每项更新改进会带...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/12/CCNA3-2/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="hong17's avatar">
-            </div>
-            <div>
-                <strong>hong17</strong>
-                <span>3月 12, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/11/CCNA3-1/">CCNA3-1</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            第二层交换和生成树协议
-第二层交换的三种不同功能：第一：地址学习。第二层的交换机和网桥能够记住在某个接口上收到的每个帧的源硬件...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/11/CCNA3-1/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="hong17's avatar">
-            </div>
-            <div>
-                <strong>hong17</strong>
-                <span>3月 11, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/10/CCNA2-2/">CCNA2-2</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            增强内部网关路由协议EIGRP是一个思科专用协议，只能用于思科路由器上开放最短路径优先OSPF 路由选择协议，是目前最流行的路由选择协议
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/10/CCNA2-2/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="hong17's avatar">
-            </div>
-            <div>
-                <strong>hong17</strong>
-                <span>3月 10, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-    <!-- Index nav -->
-        <nav class="material-nav mdl-cell mdl-cell--12-col">
-            <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">arrow_forward</i></button></a>
-        </nav>
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Python-函数
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>hong17</strong>
+        <span>3月 26, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Python个人笔记/">Python个人笔记</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Python-函数&url=http://yoursite.com/2018/03/26/Python-函数/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Python-函数&url=http://yoursite.com/2018/03/26/Python-函数/index.html&via=hong17" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/03/26/Python-函数/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/03/26/Python-函数/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=hong17的博客&title=Python-函数&summary=安全的网络~&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/03/26/Python-函数/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>函数<br>是指可重复使用的程序片段，允许你为某个代码块赋予名称，允许你通过这个特殊的名字在你的程序任何地方来运行代码块，并可重复任何次数。这就是所谓的调用函数。之前我们已经学过了内置函数len和range</p>
+<p>通常函数可以用def来定义，这一关键字后跟一个函数的标识符名称，再跟一圆括号，其中可以包括一些变量的名称，再以冒号结尾<br>举个例子：<br>def say_hello():——定义一个函数</p>
+<p>   print(‘hello world’)——函数会返回的内容</p>
+<p>say_hello()——下面都是调用函数<br>say_hello()<br>say_hello()</p>
+<p>函数参数<br>在定义函数时给定的名称称作为“形参”，在调用的时候你所提供给函数值称为“实参”<br>def print_max(a,b):——定义函数<br>    if a&gt;b:——写条件语句<br>        print(a,’is maximum’)<br>    elif a==b:<br>        print(a,’ is equal to ‘,b)<br>    else:<br>        print(b,’is maximum’)<br>print_max(3,4)——直接传递字面值，以实参的形式直接向函数提供这一数字<br>如果不想用这种调用方式，可以使用如下的：<br>x=5<br>y=6<br>print_max(x,y) ——将上面的最后一行，换成这三行就行了，使得实参x的值和y的值分别被赋值给形参a，b。</p>
+<p>局部变量<br>当你在一个函数的定义中声明变量时，它们不会以任何方式与身处函数之外但具有相同名称的变量产生关系，也就是说吗，这些变量名只存在于函数这一局部。这被称为变量的作用域。所以变量的作用域是它们被定义的块，从定义它们名字的定义点开始。<br>x=50<br>def func(x):<br>    print(‘x is , ‘,x)<br>    x=2<br>    print(‘changed local x to ‘,x)<br>func(x)<br>print(‘x is still ‘,x)<br>会输出：<br>x is ,  50<br>changed local x to  2<br>x is still  50<br>如何工作的呢？<br>第一次打印的是主代码块上x的值，接着将2赋值给x，x是我们这函数的局部变量。因此当我们改变这个x的时候，上个x即主代码块中没变化。最后的print是主代码块中定义的x的值，所以他是不会受局部变量影响的</p>
+<p>Global语句<br>可以为一个在程序顶层的变量赋值，其实也就是说他不存在任何作用域中，无论函数还是类，那么你必须告诉python这个变量是非局部的，而且全局的，global语句就可以做到。注意：不适用global时，不可能为一个定义于函数之外的变量赋值。通过使用  global  语句便可清楚看出这一变量是在最外边的代码块中定义的<br>x=50<br>def func():<br>    global x<br>    print(‘x is , ‘, x)<br>    x = 2<br>    print(‘changed local x to ‘, x)<br>func()<br>print(‘value of x is  ‘, x)<br>会输出：<br>x is ,  50<br>changed local x to  2<br>value of x is   2<br>代码与上面做的局部变量的实验相似。但是不同的是global语句用以表明x是一个全局变量，因此当我们在函数中进行为x赋值时，这一影响将改动主代码块中的x的值。<br>你可以在global语句中定义不止一个全局变量。例如global x,y,z</p>
+<p>其实 全局变量就是，只要你改，他后面都跟着改，不像局部变量，只会在你改动的那部分改动它的值！</p>
+<p>默认参数值<br>其实默认参数值应该就是常熟，更确切的说，默认参数值应该是不可变的。<br>def say(message,times=1):<br>    print(message*times)<br>say(‘Hello’)<br>say(‘World’,5)<br>会输出：<br>Hello<br>WorldWorldWorldWorldWorld<br>如何工作？<br>Say函数定义好次数从而来打印一串字符串，如果没这个数值就默认只打印一次。通过参数times指定默认参数值1来实现这一点<br>所以可以推断是怎么打印的了吧！</p>
+<p>注意：只有那些位于参数列表末尾的参数才能被赋予默认参数值，意即在函数的参数列表中拥有默认参数值的参数不能位于没有默认参数值的参数之前。<br>因为值是按参数所处的位置依次分配的。举例来说，def  func(a, b=5) 是有效的，<br>但 def  func(a=5, b) 是无效的。</p>
+<p>关键字参数<br>如果你有一些具有许多参数的函数，而你又希望只对其中的一些进行指定，那么你可以通过命名它们来给这些参数赋值——这就是关键字参数，我们使用命名（关键字）而非位置（一直以来我们所使用的方式）来指定函数中的参数<br>两大优点：其一、我们不用考虑参数的顺序，函数的使用将更加容易。其二、可以只对那些我们希望赋予的参数以赋值，只要其它的参数都具有默认参数值<br>def func(a,b=5,c=10):<br>    print(‘a is’,a,’and b is’,b,’and c is’,c)<br>func(3,7)<br>func(25,c=24)<br>func(c=50,a=100)<br>会输出：<br>a is 3 and b is 7 and c is 10<br>a is 25 and b is 5 and c is 24<br>a is 100 and b is 5 and c is 50<br>简单解释下，func函数中有一个没有默认参数值的参数，后跟两个各自带有默认参数值的参数。<br>第一次调用：a获得3，b获得7，c使用了默认<br>第二次调用：a获得25，c被指定获得24<br>第三次调用：全部使用关键字参数来指定值。尽管a在c之前定义，但我们还在变量a之前定义了变量c</p>
+<p>可变参数<br>有时你想定义的函数里能有任意数量的变量，也就是参数数量是可变的，这可通过星号来实现<br>def total(a=5,<em>numbers,*</em>phonebook):<br>    print(‘a’,a)<br>    for single_item in numbers:——遍历元组中的所有项目<br>        print(‘single_item’,single_item)</p>
+<pre><code>for first_part,second_part in phonebook.items():——遍历字典中的所以项目
+    print(first_part,second_part)
+</code></pre><p>print(total(10,1,2,3,Jack=1123,John=2231,Inge=1560))<br>会输出：<br>a 10<br>single_item 1<br>single_item 2<br>single_item 3<br>Jack 1123<br>John 2231<br>Inge 1560<br>None<br>如何工作的呢？<br>声明一个诸如<em>param的星号参数时，从开始到结束所以位置都将被收集并汇聚层一个称为param的元组<br>类似地，当声明一个诸如*</em>param双星号参数时，从此处开始直至所以结束的所以关键字参数都将被收集并汇聚为一个名为param的字典</p>
+<p>Return<br>用于从函数中返回，也中断函数<br>def maximum(x,y):<br>    if x&gt;y:<br>        return x<br>    elif x==y:<br>        return ‘数值相等’<br>    else:<br>        return y<br>print(maximum(2,3))<br>当然会输出3<br>定义的Maximum函数会返回参数中的最大值，本例中是提供给函数的数值，使用if…else来判断最大值。<br>要注意如果return没有搭配任何一个值代表返回none。在python中代表虚无。<br>每个函数都在末尾隐含了一句return none 除非你自己写的return语句。你可以运行print(some_function())，其中some_function函数不适用return语句。如下：<br>def some_function():<br>    pass</p>
+<p>docstrings<br>文档字符串。能够帮你更好地记录程序并让其更加容易于理解。而且可以当程序运行时，可以通过一个函数来获取文档。<br>def print_max(x,y): ——打印这两个数值中的最大值</p>
+<pre><code>x=int(x) ——如果这两个都应该是整数
+y=int(y)
+
+if x&gt;y:
+    print(x,&apos;is maximum&apos;)
+else:
+    print(y,&apos;is maximum&apos;)
+</code></pre><p>print_max(3,5)<br>print(print_max.<strong>doc</strong>)<br>会输出：<br>5 is maximum<br>None<br>为什么呢？<br>函数的第一行逻辑中的字符串是该函数的文档字符串。这里注意文档字符串也适用于模块和类。<br>文档字符串的惯例是一个多行字符串，它的首行以大写字母开始，句号结尾。第二行是空行，从第三行开始是详细的描述。 强烈建议 你在你的函数中使用文档字符串时遵循这个惯例。<br>你可以使用<strong>doc</strong>（注意双下划线）调用printMax函数的文档字符串属性（属于函数的名称）。请记住Python把 每一样东西 都作为对象，包括这个函数。我们会在后面的类一章学习更多关于对象的知识。<br>如果你已经在Python中使用过help()，那么你已经看到过DocStings的使用了！它所做的只是抓取函数的<strong>doc</strong>属性，然后整洁地展示给你。你可以对上面这个函数尝试一下——只是在你的程序中包括help(printMax)。记住按q退出help。<br>自动化工具也可以以同样的方式从你的程序中提取文档。因此，我 强烈建议 你对你所写的任何正式函数编写文档字符串。随你的Python发行版附带的pydoc命令，与help()类似地使用DocStrings。</p>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/03/26/Python-break-continue/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -1308,12 +813,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-
-    <!-- Swiftye -->
-    
-
-    <!-- Local Search-->
-    
 
 
 <!-- UC Browser Compatible -->
