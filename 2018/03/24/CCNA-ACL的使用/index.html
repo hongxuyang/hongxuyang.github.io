@@ -72,7 +72,7 @@
 
     
         <meta property="article:published_time" content="3月 24, 2018" />
-        <meta property="article:modified_time" content="3月 24, 2018" />
+        <meta property="article:modified_time" content="4月 01, 2018" />
     
 
     <!-- The Twitter Card protocol -->
@@ -113,7 +113,7 @@
     "headline": "CCNA-ACL的使用",
     "url": "http://yoursite.com/2018/03/24/CCNA-ACL的使用/index.html",
     "datePublished": "3月 24, 2018",
-    "dateModified": "3月 24, 2018",
+    "dateModified": "4月 01, 2018",
     "description": "安全的网络~",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -484,13 +484,21 @@
         <p>ACL 标准、扩展<br>标准：1-99      只能匹配数据包中源信息【从哪里来】      命名<br>扩展：100-199   能匹配数据包中源和目标【源对应的目标】  命名</p>
 <p>ACL规则1 所以ACL默认会拒绝所有信息<br>  例： deny host 1.1.1.1——deny any<br>       Permit any<br>Deny any 【隐藏】<br>规则2 会顺序执行语句<br>规则3 当匹配设备本地地址做策略是无效的【只针对out方向的列表】<br>注意：在标准访问列表扩展访问列表中，你不能单独删除其中的一行，只能删除整个列表。</p>
 <p>一些英语单词：<br>Permit 许可、允许<br>Deny 拒绝<br>Wildcard 通配符<br>Standard 标准的<br>Extended 扩展的<br>Sequence 序列，顺序</p>
+<p>通配符：<br>用0代表前缀数值固定<br>用1代表前缀数值可变</p>
+<p>前缀：相同是几就是几，不同为0<br>通配符：相同为0，不同为1<br>1.1.1.0-1.1.1.255 偶数地址<br>1.1.1.0 1.1.1.2 1.1.1.4 1.1.1.254<br>1.1.1.0  0.0.0.254</p>
 <p>标准：<br>1、    R1(config)#Access-list 10 permit 192.168.1.0 0.0.0.255——允许192.168.1.0的网段通过<br>2、    R1(config)#Access-list 11 deny  192.168.1.0 0.0.0.255<br>R1(config)#Access-list 11 permit    ——阻止192.168.1.0网段 其他都放行<br>3、R1(config)#Access-list 12 deny  host  192.168.1.1<br>R1(config)#Access-list 12 deny  192.168.1.1  0.0.0.0 ——这两条命令其实相同，都是拒绝一个地址</p>
-<p>扩展：<br>1、    Router(config)#access-list 101 deny ip 172.16.4.0  0.0.0.255  172.16.3.0  0.0.0.255——拒绝来自172.16.4.0，去往172.16.3.0</p>
+<p>扩展：目的 源 协议<br>1、    Router(config)#access-list 101 deny ip 172.16.4.0  0.0.0.255  172.16.3.0  0.0.0.255——拒绝来自172.16.4.0，去往172.16.3.0</p>
 <p>命名定义：<br>R2(config)#ip access-list standard ceshi  ——标准<br>R2(config-std-nacl)#permit 10.0.0.0 0.0.0.255 </p>
 <p>R2(config)#ip access-list extended 测试——扩展<br>R2(config-std-nacl)#permit ip 192.168.1.0 0.0.0.255 any ——阻止来自192.168.1.0的去往任何的</p>
 <p>如何查看呢？？？<br>Show ip access-list可以查看做的配置<br>Show ip int f0/1</p>
 <p>如何将访问控制列表放到端口上？<br>R1(config)#in g0/1<br>R1(config-if)#ip access-group 100/取得名字 in/out</p>
 <p>注意 ！！！！！！如果用标准 ACL，那么原则是尽量靠近目的【去哪里】；如果用扩展 ACL，原则上尽量靠近源【从哪里来】。</p>
+<p>针对一个接口的一个方向只能挂一个ACL，如果多个则会覆盖掉</p>
+<p>如何编辑<br>先查看access-list<br>然后进Ip access-list extended 30<br>想删除？<br>然后可以no 30 no 40<br>想增加？<br>3 permit icmp +地址</p>
+<p>其他命令<br>Clear ip access-list counters 可以清楚metric相</p>
+<p>Ip accesss-list resequence 100 1 1 【编辑100的列表，从1开始做，每次递增1】</p>
+<p>想要限制telnet登录 用扩展的 协议选择tcp 然后最后加上 eq telnet 就可以进行限制了</p>
+<p>Loginput扩展后面加上 可以显示对方数据流量过来撞上的详情</p>
 
     
 
@@ -616,7 +624,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">12</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">12</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
